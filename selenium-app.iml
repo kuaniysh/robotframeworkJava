@@ -28,7 +28,6 @@
     <orderEntry type="library" name="Maven: net.sourceforge.htmlunit:htmlunit:2.15" level="project" />
     <orderEntry type="library" name="Maven: xalan:xalan:2.7.1" level="project" />
     <orderEntry type="library" name="Maven: xalan:serializer:2.7.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.3.3" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
@@ -55,5 +54,8 @@
     <orderEntry type="library" name="Maven: org.webbitserver:webbit:0.4.14" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.5.2.Final" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-leg-rc:2.45.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.robotframework:javalib-core:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.thoughtworks.paranamer:paranamer:1.1.2" level="project" />
   </component>
 </module>
