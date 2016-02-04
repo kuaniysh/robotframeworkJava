@@ -2,6 +2,4 @@
 Library         com.selenium.test.testng.tests.SimpleTest
 
 *** Test Cases ***
-        TestPage
-
-
+ Test 1    testPage
