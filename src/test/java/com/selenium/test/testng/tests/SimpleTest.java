@@ -10,13 +10,12 @@ import org.robotframework.javalib.library.AnnotationLibrary;
 import static org.junit.Assert.assertTrue;
 
 @RobotKeywords
-public class SimpleTest extends AnnotationLibrary {
+public class SimpleTest {
 
     @RobotKeyword
     public void testPage() {
         WebDriverFactory.startBrowser(true);
         String toSearch = "Selenium";
         WebDriverFactory.getDriver().get("http://www.youtube.com");
-
     }
 }

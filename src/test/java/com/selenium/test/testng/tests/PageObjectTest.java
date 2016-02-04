@@ -4,6 +4,8 @@ import com.selenium.test.pages.YouTubePage;
 import com.selenium.test.pages.YouTubeSearchResultsPage;
 import com.selenium.test.testng.listeners.ScreenShotOnFailListener;
 import com.selenium.test.webtestsbase.WebDriverFactory;
+import org.robotframework.javalib.annotation.RobotKeyword;
+import org.robotframework.javalib.annotation.RobotKeywords;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
@@ -12,20 +14,18 @@ import org.testng.annotations.Test;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Created by Sidelnikov Mikhail on 19.09.14.
- * Uses TestNG test framework
  * Test demonstrates work with Page Object Pattern(https://code.google.com/p/selenium/wiki/PageObjects)
  */
-@Listeners({ScreenShotOnFailListener.class})
+@RobotKeywords
 public class PageObjectTest {
 
-    @BeforeTest
+    @RobotKeyword
     public void beforeTest() {
         WebDriverFactory.startBrowser(true);
     }
 
 
-    @Test
+    @RobotKeyword
     public void testSearch() {
         String toSearch = "Selenium";
         YouTubePage youTubePage = new YouTubePage();
@@ -35,7 +35,7 @@ public class PageObjectTest {
     }
 
 
-    @AfterTest
+    @RobotKeyword
     public void afterTest() {
         WebDriverFactory.finishBrowser();
     }
