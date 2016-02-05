@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
  * This is the main class for pages. When you create your page - you must extend your class from this
  */
 public abstract class BasePage {
-    protected static final int WAIT_FOR_PAGE_LOAD_IN_SECONDS = 5;
+    protected static final int WAIT_FOR_PAGE_LOAD_IN_SECONDS = 15;
     /**
      * In subclasses  should be used for page opening
      */

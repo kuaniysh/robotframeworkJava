@@ -10,6 +10,5 @@ Library         Selenium2Library
  Test 1
     [Documentation]  This is first test
     beforeTest
-    testSearch
-    afterTest
+    authorization               Слепаков                111111
 

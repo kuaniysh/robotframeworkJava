@@ -1,9 +1,12 @@
 package com.selenium.test.testng.tests;
 
+import com.selenium.test.modules.workflow.WorkflowModule;
+import com.selenium.test.pages.LoginPage;
 import com.selenium.test.pages.YouTubePage;
 import com.selenium.test.pages.YouTubeSearchResultsPage;
 import com.selenium.test.testng.listeners.ScreenShotOnFailListener;
 import com.selenium.test.webtestsbase.WebDriverFactory;
+import org.robotframework.javalib.annotation.ArgumentNames;
 import org.robotframework.javalib.annotation.RobotKeyword;
 import org.robotframework.javalib.annotation.RobotKeywords;
 import org.testng.annotations.AfterTest;
@@ -33,6 +36,18 @@ public class PageObjectTest {
         YouTubeSearchResultsPage resultsPage = youTubePage.doSearch();
         assertTrue("No results were found on results page", resultsPage.hasResults());
     }
+
+    @RobotKeyword
+    @ArgumentNames({"login", "password"})
+    public void authorization(String login, String password) {
+        LoginPage loginPage = new LoginPage();
+        loginPage.insertLogin(login);
+        loginPage.insertPassword(password);
+        loginPage.submitClick();
+        loginPage.create();
+    }
+
+
 
 
     @RobotKeyword
